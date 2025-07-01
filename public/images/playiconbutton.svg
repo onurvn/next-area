@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" height="100%" overflow="visible" preserveAspectRatio="none" style="display: block;" viewBox="0 0 40 40" width="100%">
+<g id="Arrow right">
+<rect fill="var(--fill-0, white)" height="40" rx="10" width="40"/>
+<path d="M17.5 15L22.5 20L17.5 25V15Z" fill="var(--fill-0, black)" id="Vector"/>
+</g>
+</svg>
