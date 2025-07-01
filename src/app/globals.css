@@ -1,26 +1,59 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --color-button-primary: rgb(76, 91, 31);
+  --color-button-primary-hover: rgb(145, 156, 123);
+  --color-button-secondary: rgb(225, 236, 202);
+  --color-matcha: rgb(145, 156, 123);
+  --color-primary-text: rgb(0, 0, 0);
+  --color-secondary-text: rgb(111, 111, 111);
+  --color-thirdary-text: rgb(146, 146, 146);
+  --color-icon-primary: rgb(150, 150, 150);
+  --color-line: rgb(233, 233, 233);
+  --color-footer-text: rgb(72, 92, 17);
+}
+@font-face {
+  font-family: "DM_Sans";
+  src: url("/fonts/DM_Sans/DMSans.ttf");
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+@font-face {
+  font-family: "Crimson_Text_regular";
+  src: url("/fonts/Crimson_Text/CrimsonText-Regular.ttf");
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@font-face {
+  font-family: "Crimson_Text_bold";
+  src: url("/fonts/Crimson_Text/CrimsonText-Bold.ttf");
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@font-face {
+  font-family: "Roboto_Mono";
+  src: url("/fonts/Roboto_Mono/static/RobotoMono-Regular.ttf");
+  font-weight: 400;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.dm-sans {
+  font-family: "DM_Sans", sans-serif;
+}
+
+.crimson-regular {
+  font-family: "Crimson_Text_regular", serif;
+  font-weight: 400;
+}
+
+.crimson-bold {
+  font-family: "Crimson_Text_bold", serif;
+  font-weight: 700;
+}
+
+.roboto-mono {
+  font-family: "Roboto_Mono", monospace;
 }
